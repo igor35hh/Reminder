@@ -1,0 +1,32 @@
+<div class="row">
+
+	<div class="col-sm-12 col-sm-offset-2 col-sm-8">
+		<h3 class="">Add task</h3>
+		<form>
+			<div class="form-group">
+				<label for="title">Title</label>
+				<input ng-model="add.title" type="text" class="form-control" id="title" placeholder="To buy a coffee">
+			</div>
+			<div class="form-group">
+				<label for="desk">Description</label>
+				<input ng-model="add.description" type="text" class="form-control" id="desk" placeholder="">
+			</div>
+			<div class="form-group">
+				<label for="urgency">Urgecny</label>
+				<select ng-model="add.urgency" id="urgency" class="form-control">
+					<option value="hi">Hight</option>
+					<option value="middle">Intermediate</option>
+					<option value="low">Low</option>
+				</select>
+			</div>
+			<div class="checkbox">
+				<label>
+					<input ng-model="add.completed" type="checkbox"> Completed
+				</label>
+			</div>
+			<button ng-click="add.addTask()" type="submit" class="btn btn-success">Greate</button>
+		</form>
+		&nbsp;
+	</div>
+
+</div>

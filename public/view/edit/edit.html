@@ -1,0 +1,33 @@
+<div class="row">
+
+	<div class="col-sm-12 col-sm-offset-2 col-sm-8">
+		<h3 class="">Edit task</h3>
+		<form>
+			<div class="form-group">
+				<label for="title">Title</label>
+				<input ng-model="edit.title" type="text" class="form-control" id="title" placeholder="To buy a coffee">
+			</div>
+			<div class="form-group">
+				<label for="desk">Description</label>
+				<input ng-model="edit.description" type="text" class="form-control" id="desk" placeholder="">
+			</div>
+			<div class="form-group">
+				<label for="urgency">Urgecny</label>
+				<select ng-model="edit.urgency" id="urgency" class="form-control">
+					<option value="hi">Hight</option>
+					<option value="middle">Intermediate</option>
+					<option value="low">Low</option>
+				</select>
+			</div>
+			<div class="checkbox">
+				<label>
+					<input ng-model="edit.completed" type="checkbox"> Completed
+				</label>
+			</div>
+			<button ng-click="edit.editTask()" type="submit" class="btn btn-success">Edit</button>
+			<button ng-click="edit.deleteTask()" type="submit" class="btn btn-danger pull-right">Delete</button>
+		</form>
+		&nbsp;
+	</div>
+
+</div>
